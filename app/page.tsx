@@ -74,7 +74,7 @@ export default function Home() {
                 <p className="text-xl mb-8">Fast, reliable, and secure freight forwarding services for businesses of all sizes.</p>
                 <div className="flex space-x-4">
                   <Button className="bg-red-600 hover:bg-red-700">Get Started</Button>
-                  <Button variant="outline" className="text-white border-white hover:bg-white hover:text-gray-900">
+                  <Button variant="outline" className="border-white hover:bg-white hover:text-gray-900 text-black">
                     Learn More
                   </Button>
                 </div>
@@ -84,31 +84,31 @@ export default function Home() {
                   <CardContent className="p-6">
                     <Tabs defaultValue="quote" className="w-full">
                       <TabsList className="grid w-full grid-cols-2 mb-6">
-                        <TabsTrigger value="quote" className="text-lg">Get Quote</TabsTrigger>
-                        <TabsTrigger value="track" className="text-lg">Track Order</TabsTrigger>
+                        <TabsTrigger value="quote">Get Quote</TabsTrigger>
+                        <TabsTrigger value="track">Track Order</TabsTrigger>
                       </TabsList>
                       <TabsContent value="quote">
                         <div className="space-y-4">
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div>
                               <label className="text-sm font-medium text-gray-200">From</label>
-                              <Input placeholder="Suburb or Postcode" className="mt-1 bg-white/20" />
+                              <Input placeholder="Suburb or Postcode" className="mt-1 bg-white/80" />
                             </div>
                             <div>
                               <label className="text-sm font-medium text-gray-200">To</label>
-                              <Input placeholder="Suburb or Postcode" className="mt-1 bg-white/20" />
+                              <Input placeholder="Suburb or Postcode" className="mt-1 bg-white/80" />
                             </div>
                           </div>
 
                           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                             <div>
                               <label className="text-sm font-medium text-gray-200">Quantity</label>
-                              <Input type="number" placeholder="QTY" className="mt-1 bg-white/20" />
+                              <Input type="number" placeholder="QTY" className="mt-1 bg-white/80" />
                             </div>
                             <div>
                               <label className="text-sm font-medium text-gray-200">Type</label>
                               <Select>
-                                <SelectTrigger className="mt-1 bg-white/20">
+                                <SelectTrigger className="mt-1 bg-white/80">
                                   <SelectValue placeholder="Select type" />
                                 </SelectTrigger>
                                 <SelectContent>
@@ -122,7 +122,7 @@ export default function Home() {
                             <div>
                               <label className="text-sm font-medium text-gray-200">Dimensions</label>
                               <Select>
-                                <SelectTrigger className="mt-1 bg-white/20">
+                                <SelectTrigger className="mt-1 bg-white/80">
                                   <SelectValue placeholder="Select size" />
                                 </SelectTrigger>
                                 <SelectContent>
@@ -133,7 +133,7 @@ export default function Home() {
                             </div>
                             <div>
                               <label className="text-sm font-medium text-gray-200">Weight (kg)</label>
-                              <Input type="number" placeholder="Weight" className="mt-1 bg-white/20" />
+                              <Input type="number" placeholder="Weight" className="mt-1 bg-white/80" />
                             </div>
                           </div>
 
@@ -144,7 +144,7 @@ export default function Home() {
                       </TabsContent>
                       <TabsContent value="track">
                         <div className="space-y-4">
-                          <Input placeholder="Enter tracking number" className="bg-white/20" />
+                          <Input placeholder="Enter tracking number" className="bg-white/80" />
                           <Button className="w-full bg-red-600 hover:bg-red-700">
                             Track Shipment
                           </Button>
@@ -384,7 +384,7 @@ export default function Home() {
 
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2024 AirRoad Direct. All rights reserved.
+              © 2025 AirRoad Direct. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-white">Privacy Policy</a>
